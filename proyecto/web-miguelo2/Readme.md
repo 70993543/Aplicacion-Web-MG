@@ -49,3 +49,6 @@ Los repositorios en Spring son las clases encargadas de gestionar el acceso a lo
 
 ### Servicios
 Los servicios en Spring permite conectar a varios repositorios
+
+### Controladores
+Un controlador es un componente de Spring capaz de recibir peticiones HTTP y responderlas. Las clases que son definidas como controladores son responsables de procesar llamadas entrantes(request) que ingresan a las aplicaciones, las validan y dan una respuesta(response).
