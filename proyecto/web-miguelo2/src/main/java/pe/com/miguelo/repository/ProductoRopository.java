@@ -8,6 +8,6 @@ import pe.com.miguelo.entity.ProductoEntity;
 import java.util.List;
 
 public interface ProductoRopository extends JpaRepository<ProductoEntity, Long> {
-    @Query("select c from ProductoEntity c where c.estado")
+    @Query("select c from ProductoEntity c where c.estado=1")
     List<ProductoEntity> findAllCustom();
 }
