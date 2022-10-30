@@ -28,3 +28,12 @@ Entre las principales opciones tenemos:
 Nota: En Java la **serialización** se relaciona con la manera con la cual los datos son serializados de forma predeterminda para ser utilizados en interfaces serializadas.
 
 La serializaciónn consiste en convertir los obketos de una clase en secuencia de bytes para que estos puedan ser almacenados en la memoria RAM o enviados a una base de datos por medio de la red.
+
+
+### **Application.properties:** 
+Este archivo nos permite configurar el Spring y definir configuraciones propias para nuestra aplicación
+- server.port : permite definir el puerto de la aplicación
+- server.servlet.context-path: permite definir la url del proyecto
+- spring.datasource.username: permite definir usuario de la base de datos
+- spring.datasource.password: permite definir la clave de la base de datos
+- spring.datasource.driver-class-name: permite definir el driver de la base de datos
