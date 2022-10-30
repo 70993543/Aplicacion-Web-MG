@@ -19,6 +19,11 @@ Es un API de persistencia de datos conocida como JPA, permite manejar datos rela
 Entre las principales opciones tenemos:
 - **@Entity:** Defiene la entidad con la que se va a trabajar
 - **@Table:** Define el nombre de la tabla con la cual se va a trabajar
+- **@Id:** Define la clave primaria
+- **@Column:** Define la columna de la tabla con la cual se va a relacionar
+- **@GeneratedValue:** Permite definir el modo de autoincremento
+- **@ManyToOne:** Define la relación de muchos a uno
+- **@JoinColumn:** Define el campo que genera la clave foránea
 
 Nota: En Java la **serialización** se relaciona con la manera con la cual los datos son serializados de forma predeterminda para ser utilizados en interfaces serializadas.
 
