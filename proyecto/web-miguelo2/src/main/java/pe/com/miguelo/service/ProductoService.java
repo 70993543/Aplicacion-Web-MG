@@ -1,6 +1,5 @@
 package pe.com.miguelo.service;
 
-import pe.com.miguelo.entity.ClienteEntity;
 import pe.com.miguelo.entity.ProductoEntity;
 
 import java.util.List;
