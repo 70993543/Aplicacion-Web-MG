@@ -7,6 +7,6 @@ import pe.com.miguelo.entity.EmpleadoEntity;
 import java.util.List;
 
 public interface EmpleadoRepository extends JpaRepository<EmpleadoEntity, Long> {
-    @Query("select c from EmpleadoEntity c where c.estado")
+    @Query("select c from EmpleadoEntity c where c.estado=1")
     List<EmpleadoEntity> findAllCustom();
 }
