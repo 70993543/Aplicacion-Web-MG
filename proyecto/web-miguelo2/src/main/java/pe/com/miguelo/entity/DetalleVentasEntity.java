@@ -19,18 +19,18 @@ public class DetalleVentasEntity implements Serializable {
     @Serial
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name = "idDetalleVentas")
+    @Column(name = "id_detalle_ventas")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
     @Column(name = "cantidad")
     private int cantidad;
-    @Column(name = "precioventa")
+    @Column(name = "precio_venta")
     private double precioventa;
     @ManyToOne
-    @JoinColumn(name = "idProducto")
+    @JoinColumn(name = "id_producto")
     private ProductoEntity producto;
     @ManyToOne
-    @JoinColumn(name = "idVentas")
+    @JoinColumn(name = "id_ventas")
     private VentasEntity ventas;
 }
 

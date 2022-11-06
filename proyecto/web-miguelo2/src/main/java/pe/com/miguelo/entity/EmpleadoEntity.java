@@ -19,17 +19,17 @@ public class EmpleadoEntity implements Serializable {
     @Serial
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name = "idEmpleado")
+    @Column(name = "id_empleado")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
     @Column(name = "dni")
     private String dni;
     @Column(name = "nombre")
     private String nombre;
-    @Column(name = "apellidomaterno")
-    private String apellidomaterno;
-    @Column(name = "apellidopaterno")
+    @Column(name = "apellido_paterno")
     private String apellidopaterno;
+    @Column(name = "apellido_materno")
+    private String apellidomaterno;
     @Column(name = "telefono")
     private int telefono;
     @Column(name = "genero")
@@ -41,10 +41,10 @@ public class EmpleadoEntity implements Serializable {
     @Column(name = "estado")
     private Boolean estado;
     @ManyToOne
-    @JoinColumn(name = "coDistrito", nullable = false)
+    @JoinColumn(name = "cod_distrito", nullable = false)
     private DistritoEntity distrito;
     @ManyToOne
-    @JoinColumn(name = "coRol", nullable = false)
+    @JoinColumn(name = "cod_rol", nullable = false)
     private RolEntity rol;
 }
 

@@ -19,7 +19,7 @@ public class ProductoEntity implements Serializable {
     @Serial
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name = "idProducto")
+    @Column(name = "id_producto")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
     @Column(name = "nombre")
@@ -31,7 +31,7 @@ public class ProductoEntity implements Serializable {
     @Column(name = "estado")
     private Boolean estado;
     @ManyToOne
-    @JoinColumn(name = "coCategoria")
+    @JoinColumn(name = "cod_categoria")
     private CategoriaEntity categoria;
 }
 

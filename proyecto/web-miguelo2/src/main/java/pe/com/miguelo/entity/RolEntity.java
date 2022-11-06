@@ -19,7 +19,7 @@ public class RolEntity implements Serializable {
     @Serial
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name = "coDistrito")
+    @Column(name = "id_rol")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
     @Column(name = "nombre")

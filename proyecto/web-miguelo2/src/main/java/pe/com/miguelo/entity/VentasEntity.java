@@ -19,20 +19,20 @@ public class VentasEntity implements Serializable {
     @Serial
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name = "idVentas")
+    @Column(name = "id_ventas")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
-    @Column(name = "numeroserie")
+    @Column(name = "numero_serie")
     private String numeroserie;
-    @Column(name = "fechaventas")
+    @Column(name = "fecha_ventas")
     private String fechaventas;
     @Column(name = "monto")
     private String monto;
     @ManyToOne
-    @JoinColumn(name = "idCliente")
+    @JoinColumn(name = "id_cliente")
     private ClienteEntity cliente;
     @ManyToOne
-    @JoinColumn(name = "idEmpleado")
+    @JoinColumn(name = "id_empleado")
     private EmpleadoEntity empleado;
 }
 

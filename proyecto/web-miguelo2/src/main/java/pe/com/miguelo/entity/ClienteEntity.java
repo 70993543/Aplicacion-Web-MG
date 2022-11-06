@@ -24,14 +24,14 @@ import java.io.Serializable;
 // @Table define el nombre de la tabla
 @Table(name = "cliente")
 // se tiene que serializar la clase
-public class ClienteEntity  implements Serializable {
+public class ClienteEntity implements Serializable {
     // agregamos el id de serialización
     @Serial
     private static final long serialVersionUID=1L;
     // @Id define la clave primaria
     @Id
     // @Column define la columna de la tabla con la cual se va a relacionar
-    @Column(name = "Idcliente")
+    @Column(name = "id_cliente")
     // @GeneratedValue permite definir el modo de autoincremento
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
@@ -39,9 +39,9 @@ public class ClienteEntity  implements Serializable {
     private String dni;
     @Column(name = "nombre")
     private String nombre;
-    @Column(name = "apellidopaterno")
+    @Column(name = "apellido_paterno")
     private String apellidopaterno;
-    @Column(name = "apellidomaterno")
+    @Column(name = "apellido_materno")
     private String apellidomaterno;
     @Column(name = "genero")
     private char genero;
@@ -49,14 +49,14 @@ public class ClienteEntity  implements Serializable {
     private String direccion;
     @Column(name = "correo")
     private String correo;
-    @Column(name = "teleforno")
+    @Column(name = "telefono")
     private int telefono;
     @Column(name = "estado")
     private boolean estado;
     // @ManyToOne define la relación de muchos a uno
     @ManyToOne
     // @JoinColumn define el campo que genera la clave foránea
-    @JoinColumn(name = "coDistrito",nullable = false)
+    @JoinColumn(name = "cod_distrito")
     private DistritoEntity distrito;
 }
 

@@ -19,7 +19,7 @@ public class CategoriaEntity implements Serializable {
     @Serial
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name = "coCatagoria")
+    @Column(name = "id_categoria")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigo;
     @Column(name = "nombre")
