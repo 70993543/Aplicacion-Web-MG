@@ -2,7 +2,6 @@ package pe.com.miguelo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pe.com.miguelo.entity.ClienteEntity;
 import pe.com.miguelo.entity.DistritoEntity;
 import pe.com.miguelo.service.DistritoService;
 
