@@ -6,6 +6,7 @@ import pe.com.miguelo.entity.DistritoEntity;
 import pe.com.miguelo.service.DistritoService;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -21,6 +22,10 @@ public class DistritoController {
     @GetMapping("/custom")
     public List<DistritoEntity>findAllCustom(){
         return distritoservice.findAllCustom();
+    }
+    @GetMapping("/{id}")
+    public Optional<DistritoEntity>findById(@PathVariable long id){
+        return distritoservice.findById(id);
     }
     // @Postmapping permite enviar(registrar) valores
     @PostMapping

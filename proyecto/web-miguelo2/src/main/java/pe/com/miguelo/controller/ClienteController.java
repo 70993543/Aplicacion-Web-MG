@@ -3,9 +3,11 @@ package pe.com.miguelo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.com.miguelo.entity.ClienteEntity;
+import pe.com.miguelo.entity.DistritoEntity;
 import pe.com.miguelo.service.ClienteService;
 
 import java.util.List;
+import java.util.Optional;
 
 // @RestController define la clase como un controlador
 @RestController
@@ -22,6 +24,11 @@ public class ClienteController {
     @GetMapping("/custom")
     public List<ClienteEntity>findAllCustom(){
         return clienteservice.findAllCustom();
+    }
+
+    @GetMapping("/{id}")
+    public Optional<ClienteEntity> findById(@PathVariable long id){
+        return clienteservice.findById(id);
     }
     // @Postmapping permite enviar(registrar) valores
     @PostMapping
