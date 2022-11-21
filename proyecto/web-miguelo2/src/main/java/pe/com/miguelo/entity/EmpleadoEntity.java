@@ -36,8 +36,6 @@ public class EmpleadoEntity implements Serializable {
     private char genero;
     @Column(name = "usuario")
     private String usuario;
-    @Column(name = "contrasena")
-    private String contrasena;
     @Column(name = "estado")
     private Boolean estado;
     @ManyToOne
